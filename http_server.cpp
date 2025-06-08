@@ -77,6 +77,7 @@ int main() {
 
     while (true) {
         // 연결이 accept 되었는지 확인하여 연결 실패시 이하 코드 실행 없이 continue
+        // 신규 클라이언트 연결 형성 이전까지 이하 블럭(block)
         if ((client_socket = accept(server_fd, (struct sockaddr*)&address, (socklen_t*)&addrlen)) < 0) {
             std::cerr << "Accept failed" << std::endl;
             continue;
