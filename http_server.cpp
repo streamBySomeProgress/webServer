@@ -21,7 +21,7 @@ std::string readFile(const std::string& filename) {
     return buffer.str();
 }
 
-// Send HTTP response
+// HTTP 응답 전송
 void sendResponse(int client_socket, const std::string& status, const std::string& content_type, const std::string& content) {
     std::stringstream response;
 
