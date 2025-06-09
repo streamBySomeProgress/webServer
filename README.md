@@ -9,10 +9,5 @@
 
 ## 최상단 폴더 서술
 execution: 실행에 필요한 요소들이 위치(main 함수 및 최초 실행시 환경설정에 필요한 값들을 입력받는 영역 등 구동에 필요한 영역)
-requestHandler: 요청을 처리하는 기본적 클래스 위치 
-
-
-## .env 파일(프로젝트 최상단 위치) 에 별도 작성해야 할 변수
-1. training_server_ip -> 학습을 수행하는 컴퓨터(pi_drive_training 프로젝트가 구동중인)의 ip주소
-2. training_server_port
-3. port
+requestHandler: 요청을 처리하는 기본 클래스 정의 영역
+responseHandler: 응답을 처리하는 기본 클래스 정의 영역
