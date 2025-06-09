@@ -83,7 +83,7 @@ int main() {
             continue;
         }
 
-        // Read client request, 버퍼에 있는 값을 읽어 순차 처리
+        // client_socket 에서 
         read(client_socket, buffer, BUFFER_SIZE);
         std::string request(buffer);
 
